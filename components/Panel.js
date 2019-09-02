@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, ScrollView, TouchableHighlight, Animated, Dimensions, PanResponder, Easing } from 'react-native';
-import { Bar } from './Bar';
 import { Close } from './Close';
 
 import PropTypes from 'prop-types';
@@ -97,7 +96,7 @@ export default class SwipeablePanel extends React.Component {
 	};
 
 	openLarge = () => {
-		this.setState({ showComponent: true, status: 2, canScroll: true });
+		this.setState({ showComponent: true, status: 2, canScroll: false });
 		Animated.parallel([
 			Animated.timing(this.pan, {
 				toValue: { x: 0, y: 0 },
