@@ -80,7 +80,7 @@ export default class SwipeablePanel extends React.Component {
 			duration: 200,
 			useNativeDriver: true
 		}).start();
-		this.setState({ canScroll: true, status: 2 });
+		this.setState({ status: 2 });
 		this.oldPan = { x: 0, y: 0 };
 	};
 
@@ -96,7 +96,7 @@ export default class SwipeablePanel extends React.Component {
 	};
 
 	openLarge = () => {
-		this.setState({ showComponent: true, status: 2, canScroll: false });
+		this.setState({ showComponent: true, status: 2 });
 		Animated.parallel([
 			Animated.timing(this.pan, {
 				toValue: { x: 0, y: 0 },
