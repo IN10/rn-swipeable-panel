@@ -11,7 +11,7 @@ const CONTAINER_HEIGHT = FULL_HEIGHT - 100;
 
 export default class SwipeablePanel extends React.Component {
 	static propTypes = {
-		isActive: PropTypes.bool.isRequired,
+		isActive: PropTypes.object.isRequired,
 		onClose: PropTypes.func,
 		fullWidth: PropTypes.bool,
 		onPressCloseButton: PropTypes.func,
@@ -179,7 +179,6 @@ export default class SwipeablePanel extends React.Component {
 					]}
 					{...this._panResponder.panHandlers}
 				>
-					<Bar />
 					{this.props.onPressCloseButton && <Close onPress={this.onPressCloseButton} />}
 					<ScrollView contentContainerStyle={{ width: '100%' }}>
 						{this.state.canScroll ? (
