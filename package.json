@@ -31,7 +31,9 @@
 		"url": "https://github.com/enesozturk/rn-swipeable-panel/issues"
 	},
 	"homepage": "https://github.com/enesozturk/rn-swipeable-panel",
-	"files": [ "components" ],
+	"files": [
+		"components"
+	],
 	"author": "Enes Ozturk",
 	"contributors": [
 		{

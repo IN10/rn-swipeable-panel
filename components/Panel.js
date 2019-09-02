@@ -11,7 +11,7 @@ const CONTAINER_HEIGHT = FULL_HEIGHT - 100;
 
 export default class SwipeablePanel extends React.Component {
 	static propTypes = {
-		isActive: PropTypes.object.isRequired,
+		isActive: PropTypes.bool.isRequired,
 		onClose: PropTypes.func,
 		fullWidth: PropTypes.bool,
 		onPressCloseButton: PropTypes.func,
